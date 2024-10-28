@@ -12,12 +12,12 @@
             <div class="place-self-center mb-6 font-bold text-2xl">
                 Bé Tập Tính
             </div>
-            <div class="grid grid-cols-7 gap-3">
-                <div class="col-span-2">Số thứ nhất</div>
-                <div class="col-span-3 border border-black">
+            <div class="grid grid-cols-6 md:grid-cols-7 gap-3">
+                <div class="col-span-2 md:col-span-2">Số thứ nhất</div>
+                <div class="col-span-4 md:col-span-3 border border-black">
                     <input id="num1" type="text" onblur="isValidNum1()" />
                 </div>
-                <div class="col-span-2 place-self-start">
+                <div class="col-span-6 md:col-span-2 place-self-start">
                     <input
                         onclick="setOperation('add')"
                         id="add"
@@ -34,11 +34,11 @@
                     <span>Trừ</span>
                 </div>
 
-                <div class="col-span-2">Số thứ hai</div>
-                <div class="col-span-3 border border-black">
+                <div class="col-span-2 md:col-span-2">Số thứ hai</div>
+                <div class="col-span-4 md:col-span-3 border border-black">
                     <input id="num2" type="text" onblur="isValidNum2()" />
                 </div>
-                <div class="col-span-2 place-self-start">
+                <div class="col-span-6 md:col-span-2 place-self-start">
                     <input
                         id="multiply"
                         onclick="setOperation('multiply')"
@@ -55,9 +55,12 @@
                     <span>Chia</span>
                 </div>
 
-                <div class="col-span-2">Kết quả</div>
-                <div id="result" class="col-span-3 border border-black"></div>
-                <div class="col-span-2 place-self-start border border-black">
+                <div class="col-span-2 md:col-span-2">Kết quả</div>
+                <div
+                    id="result"
+                    class="col-span-3 md:col-span-3 border border-black"
+                ></div>
+                <div class="col-span-1 place-self-start border border-black">
                     <button
                         type="button"
                         class="hover:bg-gray-100 px-1 active:bg-gray-300 duration-200"
